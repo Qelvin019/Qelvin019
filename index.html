@@ -5,10 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kelvin Munene | IT Support and Freelance Designer</title>
   <meta name="description" content="Kelvin Munene: IT support, freelance design, and part-time account management in Nairobi.">
+  <meta name="theme-color" content="#f4f7fb">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kelvin Munene | IT Support and Freelance Designer">
+  <meta property="og:description" content="IT support, freelance design, and part-time account management in Nairobi.">
+  <meta property="og:image" content="https://qelvin019.github.io/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://qelvin019.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kelvin Munene | IT Support and Freelance Designer">
+  <meta name="twitter:description" content="IT support, freelance design, and part-time account management in Nairobi.">
+  <meta name="twitter:image" content="https://qelvin019.github.io/images/og-image.jpg">
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kelvin Munene",
+    "jobTitle": "IT Support and Freelance Designer",
+    "email": "mailto:ndambukikelvinmunene@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE" },
+    "sameAs": ["https://github.com/Qelvin019"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -28,17 +55,17 @@
 
   <section class="hero">
     <div class="wrap">
-      <div>
-        <h1>Kelvin Munene</h1>
-        <p class="role">IT Support</p>
-        <p>I keep computers and people moving. I also design logos, t-shirts and banners, and I build websites and apps with the help of AI. I'm easy to work with and I explain things in plain language.</p>
-        <div class="buttons">
+      <div class="hero-copy">
+        <h1 class="reveal">Kelvin Munene</h1>
+        <p class="role reveal">IT Support</p>
+        <p class="reveal">I keep computers and people moving. I also design logos, t-shirts and banners, and I build websites and apps with the help of AI. I'm easy to work with and I explain things in plain language.</p>
+        <div class="buttons reveal">
           <a class="btn" href="#contact">Hire me</a>
           <a class="btn alt" href="#work">See my work</a>
         </div>
       </div>
 
-      <aside class="ticket" aria-label="What I'm available for">
+      <aside class="ticket reveal" aria-label="What I'm available for">
         <span class="status">Open for work</span>
         <h3>I can help with</h3>
         <ul>
@@ -52,9 +79,9 @@
 
   <section id="work">
     <div class="wrap">
-      <h2>Work I've done</h2>
+      <h2 class="reveal">Work I've done</h2>
 
-      <article class="work-row">
+      <article class="work-row reveal">
         <div>
           <h3>Starlight</h3>
           <p class="kind">Android app</p>
@@ -62,10 +89,33 @@
         <div>
           <p>A 100% offline, privacy-first Android app built with Kotlin and Jetpack Compose (Material 3). You capture photos and videos, write captions, and put together multi-shot collages. Likes, comments, reshares and followers are simulated, so you can watch your own celebrity growth, and nothing ever leaves your phone.</p>
           <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Material 3</li><li>Offline</li></ul>
+          <div class="shots">
+            <img src="images/starlight-1.webp" alt="Starlight app screenshot 1" loading="lazy" width="1200">
+            <img src="images/starlight-2.webp" alt="Starlight app screenshot 2" loading="lazy">
+            <img src="images/starlight-3.webp" alt="Starlight app screenshot 3" loading="lazy">
+          </div>
+          <p class="note"><a href="https://github.com/Qelvin019/starlight-instagram-be-your-own-clebrity" target="_blank" rel="noopener">View Starlight on GitHub</a></p>
         </div>
       </article>
 
-      <article class="work-row">
+      <article class="work-row reveal">
+        <div>
+          <h3>PesaTrack</h3>
+          <p class="kind">Android app</p>
+        </div>
+        <div>
+          <p>An offline-first variant of the M-Pesa app that I built with AI assistance. It lets you track your transactions locally so your data stays on your device.</p>
+          <ul class="tags"><li>Android</li><li>Offline-first</li><li>M-Pesa</li></ul>
+          <div class="shots">
+            <img src="images/pesatrack-1.webp" alt="PesaTrack app screenshot 1" loading="lazy">
+            <img src="images/pesatrack-2.webp" alt="PesaTrack app screenshot 2" loading="lazy">
+            <img src="images/pesatrack-3.webp" alt="PesaTrack app screenshot 3" loading="lazy">
+          </div>
+          <p class="note"><a href="https://github.com/Qelvin019/pesatrack-offline-mpesaapp" target="_blank" rel="noopener">View PesaTrack on GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="work-row reveal">
         <div>
           <h3>Ma3 Lounge</h3>
           <p class="kind">Brand design</p>
@@ -73,11 +123,15 @@
         <div>
           <p>I designed the logo for Ma3 Lounge, plus their t-shirts and banners, so the brand looks the same on clothing and on print.</p>
           <ul class="tags"><li>Logo</li><li>T-shirts</li><li>Banners</li><li>Canva</li></ul>
-          <!-- Add your best Ma3 Lounge images here, e.g. <img src="images/ma3-logo.jpg" alt="Ma3 Lounge logo"> -->
+          <div class="shots">
+            <img src="images/ma3-logo.webp" alt="Ma3 Lounge logo design" loading="lazy">
+            <img src="images/ma3-tshirt.webp" alt="Ma3 Lounge t-shirt design" loading="lazy">
+            <img src="images/ma3-tshirt-printed.webp" alt="Ma3 Lounge printed t-shirt" loading="lazy">
+          </div>
         </div>
       </article>
 
-      <article class="work-row">
+      <article class="work-row reveal">
         <div>
           <h3>Dot Mobi</h3>
           <p class="kind">Digital marketing and software development</p>
@@ -92,23 +146,27 @@
 
   <section class="skills" id="skills">
     <div class="wrap">
-      <h2>What I can do for you</h2>
+      <h2 class="reveal">What I can do for you</h2>
       <div class="skill-grid">
-        <div>
+        <div class="reveal">
           <h3>IT support</h3>
           <ul><li>Windows support</li><li>Troubleshooting for everyday users</li></ul>
         </div>
-        <div>
+        <div class="reveal">
           <h3>Design</h3>
           <ul><li>Canva</li><li>Logos</li><li>T-shirts and banners</li></ul>
         </div>
-        <div>
+        <div class="reveal">
           <h3>Web and apps</h3>
           <ul><li>HTML and CSS</li><li>Building websites and programs with AI</li></ul>
         </div>
-        <div>
+        <div class="reveal">
           <h3>Working with people</h3>
           <ul><li>Great communication</li><li>Easy to work with</li><li>Account management</li></ul>
+        </div>
+        <div class="reveal">
+          <h3>Social media manager</h3>
+          <ul><li>Content planning and scheduling</li><li>Community engagement</li><li>Brand consistency across platforms</li></ul>
         </div>
       </div>
     </div>
@@ -116,12 +174,11 @@
 
   <section class="about" id="about">
     <div class="wrap">
-      <div class="avatar" aria-hidden="true">
-        KM
-        <!-- Put your photo at images/profile.jpg. It covers the initials automatically. -->
-        <img src="images/profile.jpg" alt="" onerror="this.remove()">
+      <div class="avatar reveal" tabindex="0" role="button" aria-label="Reveal profile photo">
+        <img src="images/profile.webp" alt="Kelvin Munene profile photo" loading="lazy">
+        <span class="avatar-hint" aria-hidden="true">Curious? Come closer</span>
       </div>
-      <div>
+      <div class="reveal">
         <h2>About me</h2>
         <p>I'm Kelvin Munene, an IT support person based in Nairobi. I've worked in digital marketing and software development at Dot Mobi, and I design for brands like Ma3 Lounge.</p>
         <p>I'm currently looking for IT support gigs, freelance design work, and a part-time account manager role. I communicate clearly, I'm easy to work with, and I use AI tools to build websites and programs quickly.</p>
@@ -131,12 +188,13 @@
 
   <section class="contact" id="contact">
     <div class="wrap">
-      <h2>Let's work together</h2>
-      <p>Tell me what you need fixed, designed or managed, and I'll reply with how I can help.</p>
-      <div class="links">
-        <a class="btn" href="mailto:qelvinsavage007@gmail.com">Email me</a>
-        <a class="btn alt" href="https://github.com/Qelvin019">GitHub</a>
-        <!-- Add WhatsApp: <a class="btn alt" href="https://wa.me/2547XXXXXXXX">WhatsApp</a> -->
+      <h2 class="reveal">Let's work together</h2>
+      <p class="reveal">Email me what you need fixed, designed or managed, and I'll reply with how I can help.</p>
+      <p class="reveal email">Or email me directly at <a href="mailto:ndambukikelvinmunene@gmail.com">ndambukikelvinmunene@gmail.com</a></p>
+      <div class="links reveal">
+        <a class="btn" href="mailto:ndambukikelvinmunene@gmail.com">Email me</a>
+        <a class="btn wa" href="https://wa.me/254793313334" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn alt" href="https://github.com/Qelvin019" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </section>
@@ -146,6 +204,93 @@
 <footer>
   <div class="wrap">&copy; 2026 Kelvin Munene</div>
 </footer>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<script>
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!reduce) {
+    const glow = document.querySelector('.cursor-glow');
+    let gx = window.innerWidth / 2, gy = window.innerHeight / 2;
+    let tx = gx, ty = gy;
+
+    window.addEventListener('pointermove', (e) => {
+      tx = e.clientX; ty = e.clientY;
+      glow.classList.add('on');
+    }, { passive: true });
+
+    document.addEventListener('pointerleave', () => glow.classList.remove('on'));
+
+    const tick = () => {
+      gx += (tx - gx) * 0.12;
+      gy += (ty - gy) * 0.12;
+      glow.style.transform = `translate(${gx}px, ${gy}px)`;
+      requestAnimationFrame(tick);
+    };
+    tick();
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach((el) => {
+    if (reduce) { el.classList.add('in'); } else { io.observe(el); }
+  });
+
+  const header = document.querySelector('header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  if (!reduce) {
+    document.querySelectorAll('.ticket').forEach((card) => {
+      card.addEventListener('pointermove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.setProperty('--rx', (y * -8).toFixed(2) + 'deg');
+        card.style.setProperty('--ry', (x * 10).toFixed(2) + 'deg');
+        card.style.setProperty('--mx', ((x + 0.5) * 100).toFixed(1) + '%');
+        card.style.setProperty('--my', ((y + 0.5) * 100).toFixed(1) + '%');
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ry', '0deg');
+      });
+    });
+  }
+
+  const avatar = document.querySelector('.avatar');
+  if (avatar) {
+    if (!reduce) {
+      avatar.addEventListener('pointermove', (e) => {
+        const r = avatar.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        avatar.style.setProperty('--rx', (y * -8).toFixed(2) + 'deg');
+        avatar.style.setProperty('--ry', (x * 10).toFixed(2) + 'deg');
+        avatar.style.setProperty('--mx', ((x + 0.5) * 100).toFixed(1) + '%');
+        avatar.style.setProperty('--my', ((y + 0.5) * 100).toFixed(1) + '%');
+      });
+      avatar.addEventListener('pointerleave', () => {
+        avatar.style.setProperty('--rx', '0deg');
+        avatar.style.setProperty('--ry', '0deg');
+      });
+    }
+    const toggle = () => avatar.classList.toggle('open');
+    avatar.addEventListener('click', toggle);
+    avatar.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  }
+</script>
 
 </body>
 </html>
